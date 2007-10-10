@@ -1,13 +1,15 @@
-%define libname %mklibname px 0
+%define major 0
+%define libname %mklibname px %major
+%define develname %mklibname -d px
 
 Summary: A library to read Paradox DB files
 Name: pxlib
-Version: 0.6.1
+Version: 0.6.3
 Release: %mkrel 1
 License: GPL
 Group: System/Libraries
 Url: http://pxlib.sourceforge.net/
-Source: http://prdownloads.sourceforge.net/pxlib/%{name}-%{version}.tar.bz2
+Source: http://prdownloads.sourceforge.net/pxlib/%{name}-%{version}.tar.gz
 BuildRoot: %_tmppath/%name-%version-root
 BuildRequires: autoconf2.5 >= 2.54
 BuildRequires: sqlite-devel
@@ -23,19 +25,21 @@ functions like to open a DB file, read its header and read every single record.
 %package -n %libname
 Group: System/Libraries
 Summary: A library to read Paradox DB files
+Requires: %name >= %version
 
 %description -n %libname
 pxlib is a simply and still small C library to read Paradox DB files. It
 supports all versions starting from 3.0. It currently has a very limited set of
 functions like to open a DB file, read its header and read every single record.
 
-%package -n %libname-devel
+%package -n %develname
 Summary: A library to read Paradox DB files (Development)
 Group: Development/C
 Requires: %libname = %{version}
 Provides: libpx-devel = %{version}-%release
+Obsoletes: %mklibname -d px 0
 
-%description -n %libname-devel
+%description -n %develname
 pxlib is a simply and still small C library to read Paradox DB files. It
 supports all versions starting from 3.0. It currently has a very limited set of
 functions like to open a DB file, read its header and read every single record.
@@ -59,12 +63,15 @@ rm -rf ${RPM_BUILD_ROOT}
 %post -n %libname -p /sbin/ldconfig
 %postun -n %libname -p /sbin/ldconfig
 
-%files -n %libname -f %name.lang
+%files -f %name.lang
 %defattr(-,root,root)
 %doc README AUTHORS ChangeLog
-%_libdir/lib*.so.*
 
-%files -n %libname-devel
+%files -n %libname
+%defattr(-,root,root)
+%_libdir/libpx.so.%{major}*
+
+%files -n %develname
 %defattr(-,root,root)
 %_libdir/lib*.so
 %_libdir/*.a
