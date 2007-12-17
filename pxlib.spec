@@ -10,7 +10,6 @@ License: GPL
 Group: System/Libraries
 Url: http://pxlib.sourceforge.net/
 Source: http://prdownloads.sourceforge.net/pxlib/%{name}-%{version}.tar.gz
-BuildRoot: %_tmppath/%name-%version-root
 BuildRequires: autoconf2.5 >= 2.54
 BuildRequires: sqlite-devel
 BuildRequires: libgsf-devel
