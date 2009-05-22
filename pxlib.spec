@@ -15,7 +15,7 @@ BuildRequires: autoconf2.5 >= 2.54
 BuildRequires: sqlite-devel
 BuildRequires: libgsf-devel
 BuildRequires: intltool
-BuildRequires: docbook-to-man
+BuildRequires: docbook-to-man docbook-utils
 BuildRequires: libglib2.0-devel
 
 %description
