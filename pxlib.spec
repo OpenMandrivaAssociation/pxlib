@@ -5,7 +5,7 @@
 Summary: A library to read Paradox DB files
 Name: pxlib
 Version: 0.6.3
-Release: %mkrel 3
+Release: %mkrel 4
 License: GPL
 Group: System/Libraries
 Url: http://pxlib.sourceforge.net/
@@ -14,7 +14,8 @@ BuildRoot: %_tmppath/%name-%version-root
 BuildRequires: autoconf2.5 >= 2.54
 BuildRequires: sqlite-devel
 BuildRequires: libgsf-devel
-BuildRequires: perl-XML-Parser
+BuildRequires: intltool
+BuildRequires: docbook-to-man
 BuildRequires: libglib2.0-devel
 
 %description
@@ -62,8 +63,6 @@ rm -rf ${RPM_BUILD_ROOT}
 
 %if %mdkversion < 200900
 %post -n %libname -p /sbin/ldconfig
-%endif
-%if %mdkversion < 200900
 %postun -n %libname -p /sbin/ldconfig
 %endif
 
@@ -82,5 +81,5 @@ rm -rf ${RPM_BUILD_ROOT}
 %attr(644,root,root) %_libdir/*.la
 %_libdir/pkgconfig/*
 %_includedir/*
-
+%_mandir/man3/*
 
