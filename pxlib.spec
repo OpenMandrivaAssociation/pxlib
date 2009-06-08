@@ -4,8 +4,8 @@
 
 Summary: A library to read Paradox DB files
 Name: pxlib
-Version: 0.6.3
-Release: %mkrel 4
+Version: 0.6.4
+Release: %mkrel 1
 License: GPL
 Group: System/Libraries
 Url: http://pxlib.sourceforge.net/
@@ -51,7 +51,7 @@ functions like to open a DB file, read its header and read every single record.
 %build
 export CPPFLAGS=`pkg-config --cflags glib-2.0`
 %configure2_5x  --with-sqlite --with-gsf
-%make
+%make LIBS=-lm
 
 %install
 rm -rf ${RPM_BUILD_ROOT}
