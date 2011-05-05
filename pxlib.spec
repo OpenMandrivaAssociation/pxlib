@@ -16,7 +16,7 @@ BuildRequires: sqlite-devel
 BuildRequires: libgsf-devel
 BuildRequires: intltool
 BuildRequires: docbook-to-man docbook-utils
-BuildRequires: libglib2.0-devel
+BuildRequires: glib2-devel
 
 %description
 pxlib is a simply and still small C library to read Paradox DB files. It
