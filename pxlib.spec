@@ -54,12 +54,12 @@ export CPPFLAGS=`pkg-config --cflags glib-2.0`
 %make LIBS=-lm
 
 %install
-rm -rf ${RPM_BUILD_ROOT}
+rm -rf %{buildroot}
 %makeinstall_std
 %find_lang %name
 
 %clean
-rm -rf ${RPM_BUILD_ROOT}
+rm -rf %{buildroot}
 
 %if %mdkversion < 200900
 %post -n %libname -p /sbin/ldconfig
