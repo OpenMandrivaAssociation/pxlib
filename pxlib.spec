@@ -77,3 +77,111 @@ rm -rf %{buildroot}
 %_includedir/*
 %_mandir/man3/*
 
+
+
+%changelog
+* Thu Jan 12 2012 GÃ¶tz Waschk <waschk@mandriva.org> 0.6.5-1mdv2012.0
++ Revision: 760263
+- new version
+- remove libtool archive
+
+* Thu May 05 2011 Funda Wang <fwang@mandriva.org> 0.6.4-4
++ Revision: 669105
+- fix br
+
+  + Oden Eriksson <oeriksson@mandriva.com>
+    - mass rebuild
+
+* Fri Dec 03 2010 Oden Eriksson <oeriksson@mandriva.com> 0.6.4-3mdv2011.0
++ Revision: 607255
+- rebuild
+
+* Tue Mar 16 2010 Oden Eriksson <oeriksson@mandriva.com> 0.6.4-2mdv2010.1
++ Revision: 521161
+- rebuilt for 2010.1
+
+* Mon Jun 08 2009 GÃ¶tz Waschk <waschk@mandriva.org> 0.6.4-1mdv2010.0
++ Revision: 383975
+- new version
+- fix build
+
+* Fri May 22 2009 GÃ¶tz Waschk <waschk@mandriva.org> 0.6.3-4mdv2010.0
++ Revision: 378699
+- fix build deps
+- add man pages
+
+* Sat Mar 07 2009 Antoine Ginies <aginies@mandriva.com> 0.6.3-3mdv2009.1
++ Revision: 351586
+- rebuild
+
+* Wed Jun 18 2008 Thierry Vignaud <tv@mandriva.org> 0.6.3-2mdv2009.0
++ Revision: 225122
+- rebuild
+- kill re-definition of %%buildroot on Pixel's request
+
+  + Pixel <pixel@mandriva.com>
+    - do not call ldconfig in %%post/%%postun, it is now handled by filetriggers
+
+  + Olivier Blin <blino@mandriva.org>
+    - restore BuildRoot
+
+* Wed Oct 10 2007 GÃ¶tz Waschk <waschk@mandriva.org> 0.6.3-1mdv2008.1
++ Revision: 96661
+- new version
+- move translations to main package
+- new devel name
+
+
+* Sun Jan 28 2007 GÃ¶tz Waschk <waschk@mandriva.org> 0.6.1-1mdv2007.0
++ Revision: 114688
+- Import pxlib
+
+* Sun Jan 28 2007 Götz Waschk <waschk@mandriva.org> 0.6.1-1mdv2007.1
+- rebuild
+
+* Thu Mar 30 2006 GÃ¶tz Waschk <waschk@mandriva.org> 0.6.1-1mdk
+- New release 0.6.1
+
+* Tue Mar 07 2006 GÃ¶tz Waschk <waschk@mandriva.org> 0.6.0-2mdk
+- rebuild with new libgsf
+
+* Mon Feb 06 2006 GÃ¶tz Waschk <waschk@mandriva.org> 0.6.0-1mdk
+- New release 0.6.0
+
+* Fri Dec 09 2005 GÃ¶tz Waschk <waschk@mandriva.org> 0.5.1-3mdk
+- rebuild for new libgsf
+- use mkrel
+
+* Wed Oct 12 2005 GÃ¶tz Waschk <waschk@mandriva.org> 0.5.1-2mdk
+- rebuild for new libgsf
+
+* Fri Aug 12 2005 GÃ¶tz Waschk <waschk@mandriva.org> 0.5.1-1mdk
+- New release 0.5.1
+
+* Fri Jul 15 2005 Götz Waschk <waschk@mandriva.org> 0.5.0-1mdk
+- New release 0.5.0
+
+* Thu May 26 2005 Götz Waschk <waschk@mandriva.org> 0.4.4-1mdk
+- fix build on x86_64
+- drop patches
+- New release 0.4.4
+
+* Wed Mar 09 2005 Gwenole Beauchesne <gbeauchesne@mandrakesoft.com> 0.4.3-2mdk
+- lib64 & 64-bit fixes
+
+* Tue Jan 04 2005 Lenny Cartier <lenny@mandrakesoft.com> 0.4.3-1mdk
+- 0.4.3
+
+* Mon Nov 08 2004 Lenny Cartier <lenny@mandrakesoft.com> 0.4.0-1mdk
+- 0.4.0
+
+* Wed Oct 13 2004 Götz Waschk <waschk@linux-mandrake.com> 0.3.1-1mdk
+- fix source URL
+- New release 0.3.1
+
+* Mon Sep 20 2004 Götz Waschk <waschk@linux-mandrake.com> 0.3.0-2mdk
+- fix buildrequires
+
+* Wed Sep 01 2004 Götz Waschk <waschk@linux-mandrake.com> 0.3.0-1mdk
+- initial mdk package
+
