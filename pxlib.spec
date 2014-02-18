@@ -11,12 +11,12 @@ Group: System/Libraries
 Url: http://pxlib.sourceforge.net/
 Source: http://prdownloads.sourceforge.net/pxlib/%{name}-%{version}.tar.gz
 BuildRoot: %_tmppath/%name-%version-root
-BuildRequires: autoconf2.5 >= 2.54
-BuildRequires: sqlite-devel
-BuildRequires: libgsf-devel
-BuildRequires: intltool
-BuildRequires: docbook-to-man docbook-utils
-BuildRequires: pkgconfig(glib-2)
+BuildRequires:  docbook-to-man
+BuildRequires:  docbook-utils
+BuildRequires:  intltool
+BuildRequires:  pkgconfig(glib-2.0)
+BuildRequires:  pkgconfig(libgsf-1)
+BuildRequires:  pkgconfig(sqlite)
 
 %description
 pxlib is a simply and still small C library to read Paradox DB files. It
