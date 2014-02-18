@@ -16,7 +16,7 @@ BuildRequires: sqlite-devel
 BuildRequires: libgsf-devel
 BuildRequires: intltool
 BuildRequires: docbook-to-man docbook-utils
-BuildRequires: glib2-devel
+BuildRequires: pkgconfig(glib-2)
 
 %description
 pxlib is a simply and still small C library to read Paradox DB files. It
@@ -80,7 +80,7 @@ rm -rf %{buildroot}
 
 
 %changelog
-* Thu Jan 12 2012 Götz Waschk <waschk@mandriva.org> 0.6.5-1mdv2012.0
+* Thu Jan 12 2012 GÃ¶tz Waschk <waschk@mandriva.org> 0.6.5-1mdv2012.0
 + Revision: 760263
 - new version
 - remove libtool archive
@@ -100,12 +100,12 @@ rm -rf %{buildroot}
 + Revision: 521161
 - rebuilt for 2010.1
 
-* Mon Jun 08 2009 Götz Waschk <waschk@mandriva.org> 0.6.4-1mdv2010.0
+* Mon Jun 08 2009 GÃ¶tz Waschk <waschk@mandriva.org> 0.6.4-1mdv2010.0
 + Revision: 383975
 - new version
 - fix build
 
-* Fri May 22 2009 Götz Waschk <waschk@mandriva.org> 0.6.3-4mdv2010.0
+* Fri May 22 2009 GÃ¶tz Waschk <waschk@mandriva.org> 0.6.3-4mdv2010.0
 + Revision: 378699
 - fix build deps
 - add man pages
@@ -125,43 +125,43 @@ rm -rf %{buildroot}
   + Olivier Blin <blino@mandriva.org>
     - restore BuildRoot
 
-* Wed Oct 10 2007 Götz Waschk <waschk@mandriva.org> 0.6.3-1mdv2008.1
+* Wed Oct 10 2007 GÃ¶tz Waschk <waschk@mandriva.org> 0.6.3-1mdv2008.1
 + Revision: 96661
 - new version
 - move translations to main package
 - new devel name
 
 
-* Sun Jan 28 2007 Götz Waschk <waschk@mandriva.org> 0.6.1-1mdv2007.0
+* Sun Jan 28 2007 GÃ¶tz Waschk <waschk@mandriva.org> 0.6.1-1mdv2007.0
 + Revision: 114688
 - Import pxlib
 
-* Sun Jan 28 2007 G�tz Waschk <waschk@mandriva.org> 0.6.1-1mdv2007.1
+* Sun Jan 28 2007 Götz Waschk <waschk@mandriva.org> 0.6.1-1mdv2007.1
 - rebuild
 
-* Thu Mar 30 2006 Götz Waschk <waschk@mandriva.org> 0.6.1-1mdk
+* Thu Mar 30 2006 GÃ¶tz Waschk <waschk@mandriva.org> 0.6.1-1mdk
 - New release 0.6.1
 
-* Tue Mar 07 2006 Götz Waschk <waschk@mandriva.org> 0.6.0-2mdk
+* Tue Mar 07 2006 GÃ¶tz Waschk <waschk@mandriva.org> 0.6.0-2mdk
 - rebuild with new libgsf
 
-* Mon Feb 06 2006 Götz Waschk <waschk@mandriva.org> 0.6.0-1mdk
+* Mon Feb 06 2006 GÃ¶tz Waschk <waschk@mandriva.org> 0.6.0-1mdk
 - New release 0.6.0
 
-* Fri Dec 09 2005 Götz Waschk <waschk@mandriva.org> 0.5.1-3mdk
+* Fri Dec 09 2005 GÃ¶tz Waschk <waschk@mandriva.org> 0.5.1-3mdk
 - rebuild for new libgsf
 - use mkrel
 
-* Wed Oct 12 2005 Götz Waschk <waschk@mandriva.org> 0.5.1-2mdk
+* Wed Oct 12 2005 GÃ¶tz Waschk <waschk@mandriva.org> 0.5.1-2mdk
 - rebuild for new libgsf
 
-* Fri Aug 12 2005 Götz Waschk <waschk@mandriva.org> 0.5.1-1mdk
+* Fri Aug 12 2005 GÃ¶tz Waschk <waschk@mandriva.org> 0.5.1-1mdk
 - New release 0.5.1
 
-* Fri Jul 15 2005 G�tz Waschk <waschk@mandriva.org> 0.5.0-1mdk
+* Fri Jul 15 2005 Götz Waschk <waschk@mandriva.org> 0.5.0-1mdk
 - New release 0.5.0
 
-* Thu May 26 2005 G�tz Waschk <waschk@mandriva.org> 0.4.4-1mdk
+* Thu May 26 2005 Götz Waschk <waschk@mandriva.org> 0.4.4-1mdk
 - fix build on x86_64
 - drop patches
 - New release 0.4.4
@@ -175,13 +175,13 @@ rm -rf %{buildroot}
 * Mon Nov 08 2004 Lenny Cartier <lenny@mandrakesoft.com> 0.4.0-1mdk
 - 0.4.0
 
-* Wed Oct 13 2004 G�tz Waschk <waschk@linux-mandrake.com> 0.3.1-1mdk
+* Wed Oct 13 2004 Götz Waschk <waschk@linux-mandrake.com> 0.3.1-1mdk
 - fix source URL
 - New release 0.3.1
 
-* Mon Sep 20 2004 G�tz Waschk <waschk@linux-mandrake.com> 0.3.0-2mdk
+* Mon Sep 20 2004 Götz Waschk <waschk@linux-mandrake.com> 0.3.0-2mdk
 - fix buildrequires
 
-* Wed Sep 01 2004 G�tz Waschk <waschk@linux-mandrake.com> 0.3.0-1mdk
+* Wed Sep 01 2004 Götz Waschk <waschk@linux-mandrake.com> 0.3.0-1mdk
 - initial mdk package
 
