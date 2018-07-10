@@ -5,7 +5,7 @@
 Summary:	A library to read Paradox DB files
 Name:		pxlib
 Version:	0.6.5
-Release:	9
+Release:	10
 License:	GPLv2
 Group:		System/Libraries
 Url:		http://pxlib.sourceforge.net/
