@@ -8,7 +8,7 @@ Version:	0.6.8
 Release:	2
 License:	GPLv2
 Group:		System/Libraries
-Url:		http://pxlib.sourceforge.net/
+Url:		https://pxlib.sourceforge.net/
 Source0:	http://prdownloads.sourceforge.net/pxlib/%{name}-%{version}.tar.gz
 BuildRequires:	docbook-to-man
 BuildRequires:	docbook-utils
