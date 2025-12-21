@@ -10,6 +10,11 @@ License:	GPLv2
 Group:		System/Libraries
 Url:		https://pxlib.sourceforge.net/
 Source0:	http://prdownloads.sourceforge.net/pxlib/%{name}-%{version}.tar.gz
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	docbook-to-man
 BuildRequires:	docbook-utils
 BuildRequires:	intltool
